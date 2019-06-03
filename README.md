@@ -5,13 +5,13 @@ Ensemble methods (randomforest, bagging, adaboost, etc.)
 
 Decision tree is prone to overfitting (i.e., low bias, high variance). The model created by decision tree is sensitive to the dataset. Only a small change in the dataset will make a huge change in the model.
 
-In order to solve this problem, we can apply ensemble methods. I study on three main ensemble methods including bootstrap aggregating (bagging), random forest, and adaboost.
+In order to solve this problem, we can apply ensemble methods. I study on three main ensemble methods including bootstrap aggregating (bagging), random forest, and adaboost. Ensemble methods are classified as meta-estimator. 'Meta' means 'more than one model'. 'Estimator' is corresonding to 'model'. 'Meta-estimator' is a combination of single models to make a stronger model.
 
 ### Bootstrap aggregating (bagging)
 
 Invented in 1994. Widely used in decision tree.
 
-Bagging works well with strong and complex models. The idea is very simple: 
+Bagging works well with strong and complex models (or estimators as well). I used model rather than estimator for simplicity. The idea is very simple: 
 
 - Step 1: Create B models for B training dataset which are drawn from the original dataset. Each model may be overfitting with its specific dataset (i.e., low bias, high variance)
 
